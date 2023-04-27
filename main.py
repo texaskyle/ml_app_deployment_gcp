@@ -5,7 +5,7 @@ from flask_cors import CORS,cross_origin
 import pickle
 
 app = Flask(__name__) # initializing a flask app
-
+# app=application
 @app.route('/',methods=['GET'])  # route to display the home page
 @cross_origin()
 def homePage():
@@ -41,7 +41,6 @@ def index():
     # return render_template('results.html')
     else:
         return render_template('index.html')
-
 
 
 if __name__ == "__main__":
